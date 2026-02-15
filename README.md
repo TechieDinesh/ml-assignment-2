@@ -13,6 +13,7 @@ The dataset contains:
 3. Binary classification target
 
 Models Used & Evaluation Metrics :
+<img width="335" height="106" alt="image" src="https://github.com/user-attachments/assets/ab148f67-6886-49e0-b917-17236766c8a9" />
 
 Model	            Accuracy	AUC	    Precision	Recall	        F1	        MCC
 Logistic Regression	0.95	0.967342342	0.960526316	0.986486486	0.973333333	0.587929801
@@ -46,4 +47,5 @@ Streamlit App Features are below :
 1. Upload CSV dataset
 2. Select ML model
 3. Display confusion matrix
+
 4. Display classification report
