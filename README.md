@@ -25,27 +25,40 @@ XGBoost	            0.99375	0.999436937	0.993288591	     1	    0.996632997	    0
 
 Model Performance Observations
 
-Logistic Regression:
-Performs well on linear relationships but may miss complex patterns.
+Observations: 
 
-Decision Tree:
-Captures nonlinear patterns but may overfit on training data.
+ML Model Name  
 
-KNN:
-Works well for local patterns but sensitive to feature scaling and noise.
+Observation about model performance 
 
-Naive Bayes:
-Fast and efficient but assumes feature independence.
+Logistic Regression 
 
-Random Forest:
-Improves accuracy by combining multiple decision trees and reduces overfitting.
+Achieved high accuracy (95%) with strong precision and recall, indicating that the dataset has meaningful linear relationships. However, its MCC score is moderate, suggesting some limitations in handling complex patterns. 
 
-XGBoost:
-Usually provides the best performance due to boosting and handling complex relationships.
+Decision Tree 
+
+Obtained perfect accuracy and MCC on the test set, indicating that it learned the dataset very well. However, such perfect scores may indicate overfitting, meaning the model might not generalize well to unseen data 
+
+KNN 
+
+Showed good recall (100%) but comparatively lower MCC and AUC, suggesting that although it correctly identifies most positive cases, its overall predictive reliability is weaker. 
+
+Naive Bayes 
+
+Performed consistently with high recall and F1 score, showing it handles class separation well. However, its moderate MCC indicates that the independence assumption may reduce performance on correlated features. 
+
+Random Forest 
+
+Achieved strong accuracy and very high AUC, indicating good predictive power and stability. The ensemble approach reduces overfitting compared to a single decision tree. 
+
+XGBoost 
+
+Delivered the best overall performance with the highest accuracy, AUC, F1 score, and MCC. This shows that boosting effectively captured complex relationships and produced the most reliable model for this dataset. 
+
 
 Streamlit App Features are below : 
 1. Upload CSV dataset
 2. Select ML model
 3. Display confusion matrix
-
 4. Display classification report
+
